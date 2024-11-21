@@ -396,16 +396,53 @@ header {
 
 /* ```````````````````````````````````````````````````````````````````````````````` */
 .contact {
-  /* display: flex; */
-  background-color: #ddb606;
+  background-color: #05080d;
   margin-bottom: 50vh;
-  padding: 20px;
+  /* padding: 20px; */
+  font-family: Montserrat;
 }
 .clink {
   width:50%;
-  background-color: #248ea6;
+  padding:20px;
+  background-color: #2d7f92;
 }
-.clink
+.clink h2{
+  font-size: 40px;
+}
+.clink p{
+  font-size: 20px;
+  width: 70%;
+  margin:20px auto;
+}
+.clink a{
+  background-color: #61acca;
+  display: block;
+  width:50%;
+  margin: 10px auto;
+  border: solid black 2px;
+  
+  /* padding-left: 5%; */
+  font-size: 20px;
+  transition: 500ms ease;
+}
+/* .clink a:hover{
+  scale:1.1;
+} */
+.clink a:hover  .clink a i{
+
+  background-color: #1c3c42   ;            
+}
+.clink a span{
+  padding-left: 3%;
+}
+.clink a i{
+  background-color: #141414;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
+  color: #c4eaf2;
+  
+}
 
 
 
