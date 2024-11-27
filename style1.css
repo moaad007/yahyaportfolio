@@ -306,9 +306,12 @@ header {
  
   padding:80px 40px ;
   /* background-color: #99c6d8; */
-  background-image: linear-gradient(to bottom right ,
+  /* background-image: linear-gradient(to bottom right ,
     #b3e1f3  ,  #708090 
-  );
+  ); */
+  background-image: url(/images/about-bg.svg);
+  background-size: cover;
+  background-position: center;
   color:#020d20  ;
 }
 .about-h2{
@@ -334,6 +337,8 @@ header {
 .about-cards>div{
   flex-grow: 1;
   font-weight: 500;
+  backdrop-filter: blur(6px);
+  background-color:#b3e1f37a ;
 }
 .profile{
  flex-basis:60%;
@@ -566,6 +571,9 @@ header {
   align-items: center;
   flex-direction: column;
   background-color: #F7FAFC;
+  background-image: url(/images/projict\ background.svg);
+  background-position: center;
+  background-size: cover;
   /* background-image: linear-gradient(to top  ,
   #F7FAFC ,  #708090 
 ); */
