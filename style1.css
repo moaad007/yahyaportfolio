@@ -92,7 +92,10 @@ nav li a:hover::after {
   transform-origin: left ;
 }
 
+nav button a{
+  color:#002147;
 
+}
 nav button {
   margin-right: 20px;
   padding: 8px 25px;
@@ -273,14 +276,17 @@ header {
   }
 }
 
+
+
 /* --------------------------about---------------------- */
+
 .about-me {
   max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   padding:40px ;
 
   background-image: url(/images/about-bg.svg)  ;
@@ -288,8 +294,10 @@ header {
   background-position: center ;
   background-repeat: no-repeat;
   color:#020d20  ;
-  /* position: relative; */
-  /* overflow: hidden; */
+
+
+
+
 }
 
 .about-h2{
@@ -310,16 +318,13 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap:30px;
-
+ 
 }
 .about-cards>div{
   flex-grow: 1;
   font-weight: 500;
   backdrop-filter: blur(6px);
   background-color:#b3e1f359 ;
-  animation: popup  linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 25%;
 }
 @keyframes popup{
   0%{
@@ -331,6 +336,22 @@ header {
     opacity:1;
   }
 }
+@keyframes slidelift{
+  0%{
+
+     transform: translateX(-50%);
+    opacity:0.5;
+
+
+
+  }
+  100%{
+    transform: translateX(0px);
+    opacity:1;
+
+  }
+}
+
 .profile{
  flex-basis:60%;
  padding:3%;
@@ -340,6 +361,10 @@ header {
  
  border: solid 1px;
  position: relative;
+
+ animation: slidelift  linear;
+ animation-timeline: view();
+ animation-range: entry 0% cover 30%;
 }
 
 .h-svg{
@@ -370,6 +395,9 @@ header {
   border: solid 1px #333;
 
   position: relative;
+  animation: slidelift  linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 .Education>svg{
   fill: #4682B4;
@@ -431,6 +459,10 @@ header {
   
   position: relative;
   border: 1px solid #333;
+
+  animation: slidelift  linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
   
 }
 .Experience>svg{
@@ -468,6 +500,10 @@ header {
 .Skills{
   flex-basis:55%;
   border: 1px solid ;
+
+  animation: slidelift linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
   
 }
 .Skills>svg{
@@ -777,7 +813,7 @@ header {
      padding: 160px 30px 20px;
  
  
-  /* padding:20px; */
+
 
   width:100%;
   min-height:100vh;
@@ -830,20 +866,9 @@ header {
   gap: 20px;
 
 
-  /* animation: slidetoright linear;
-  animation-range: view();
-  animation-timeline: entry 0% cover 40%; */
-}
-/* @keyframes slidetoright {
-  0%{
 
-    opacity: 0;
-  }
-  100%{
-   opacity: 1;
-  }
-  
-} */
+}
+
 .clink > h2{
   margin-right:auto;
   font-size: 35px;
@@ -884,8 +909,8 @@ header {
   flex-shrink: 0;
   display: inline;
   font-size: 25px;
-  line-height:40px;
-  width:40px;
+  line-height:50px;
+  width:50px;
   text-align: center;
   background-color: #4683b4a8 ;
   color: #021027;
