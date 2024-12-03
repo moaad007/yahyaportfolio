@@ -65,7 +65,7 @@
 
     <main>
       <div class="about-me" id="ab">
-        <h2 class="about-h2" >About me</h2>
+        <h2 class="about-h2 section-title" >About me</h2>
         <div class="about-cards" >
             <div class="profile">  
               <svg class="h-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -160,7 +160,7 @@
 
 
         <div id="pr" class="projects">
-            <h2 >Projects</h2>
+            <h2 class="section-title">Projects</h2>
 
             <div class="cards">
 
@@ -269,15 +269,15 @@
      
                 
             </div>
-   <div class="form">
+   <form class="form" action="https://api.web3forms.com/submit" method="POST" id="form">
     <h3>Say hello !</h3>
+    <input type="hidden" name="access_key" value="6d6b0782-0e9f-4f29-9b59-fd621362c960">
+    <input type="text" id="name" name="Name" placeholder="Name" required>
+    <input type="email" id="email" name="email" placeholder="Email" required>
 
-    <input type="text" id="name" name="Name" placeholder="Name">
-    <input type="email" id="email" name="email" placeholder="Email" >
-
-    <textarea name="" id="textarea" placeholder="Drop Me some Lines"></textarea>
-    <button>Send<i class="fa-solid fa-arrow-right"></i></button>
-   </div>
+    <textarea name="message" id="textarea" placeholder="Drop Me some Lines"></textarea>
+    <button type="submit">Send<i class="fa-solid fa-arrow-right"></i></button>
+   </form>
         </div>
     </main>
     
