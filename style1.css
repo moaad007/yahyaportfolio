@@ -44,7 +44,7 @@ nav {
 
 .logo {
   /* margin-left:20px ; */
-  height:65px;
+  height:60px;
   
   display: block;
   margin-right: auto;
@@ -67,7 +67,7 @@ nav li {
 }
 nav li a{
   color: #001F54;
-  padding:5px;
+  padding:4px;
   /* overflow: hidden; */
   transition: 500ms;
   position: relative;
@@ -144,7 +144,7 @@ header {
 
   background-color: #021027;
 
-  box-shadow: #000000e1 0px 00px 25px;
+  box-shadow: #00000080 0px 00px 25px;
   color: #b3e1f3;
   
   position: relative;
@@ -173,10 +173,9 @@ header {
 }
 .hero H1 {
   font-size: clamp(70px,6vw,100px);
-  /* font-size: 90px; */
-  /* font-size:5vw ; */
+
   font-weight: 600;
-  line-height: 57px;
+  line-height: 53px;
 }
 
 .hero h1 span {
@@ -213,7 +212,7 @@ header {
   transform: translate( 0% , -50%);
   background-color: #b3e1f3;
 
-  height: 40%;
+  height: 50%;
   width: 50px;
 
   display: flex;
@@ -226,16 +225,16 @@ header {
   box-shadow: #021027c5   0px 0px 20px 10px; 
 }
 .sidec:hover {
-  height: 45%;
+  height: 55%;
   transition: 300ms ease-out ;
   background-color:#ceecf8;
 
 }
 
 .sidec a {
-  color:#021027 ;
+  color:#001F54 ;
   transition:  800ms ease-out;
-  font-size: 28px;
+  font-size: 26px;
 }
 .sidec a:hover {
   transition: 300ms ease-out ;
@@ -244,9 +243,10 @@ header {
 /* ---------------------scroll down------------------- */
 .scroll {
   position: absolute;
-  top:85%;
+  bottom:10px;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 0%);
+  font-size: clamp(20px,3vh,30px);
 
   
   text-align: center;
@@ -255,9 +255,7 @@ header {
 
 }
 .scroll h3 {
-
-  font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
   text-shadow: 0px 4px 5px #001F54cb;
   padding: 5px;
 
@@ -265,7 +263,7 @@ header {
 .scroll i {
   line-height: 10px;
   display: block;
-  font-size: 30px;
+
   
   animation: down  ease-in 800ms infinite alternate;
   color: #001F54;
@@ -284,12 +282,12 @@ header {
 /* --------------------------about---------------------- */
 
 .about-me {
-  max-width: 100%;
+  /* max-width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   min-height: 100vh;
-  width: 100vw;
+ 
   padding:40px ;
 
   background-image: url(/images/about-bg.svg)  ;
@@ -305,7 +303,7 @@ header {
 
 .about-h2{
   text-align: center;
-  font-size:50px;
+  font-size:45px;
   padding:40px 0px;
   color: #001F54 ;
   position: relative;
@@ -319,7 +317,7 @@ header {
   z-index:-1;
    transform: translate(-50%);
  
-  font-size:7vw;
+  font-size:6vw;
   color: #f7fafc4d;
 }
 .about-cards{
@@ -339,7 +337,7 @@ header {
   flex-grow: 1;
   font-weight: 500;
   backdrop-filter: blur(6px);
-  background-color:#b3e1f359 ;
+  background-color:#b3e1f383 ;
 }
 @keyframes popup{
   0%{
@@ -466,7 +464,7 @@ header {
   text-align: right;
 }
 .Experience{
-  flex-basis:35%;
+  flex-basis:30%;
   min-width:400px;
   
   text-align: justify;
@@ -543,7 +541,7 @@ header {
   flex-wrap: wrap;
   gap:20px 50px;
 
-  padding:4%;
+  padding:5% 2% 2%;
   align-items: center;
 
 }
@@ -857,9 +855,11 @@ header {
   
 }
 .contact> *{
+
   background-color: #020d20;
   color: #b3e1f3;
-  min-height:500px;
+  /* height: 200px; */
+  /* min-height:500px; */
   border-radius: 5px;
   
   animation: popup  linear ;
@@ -885,14 +885,14 @@ header {
   flex-grow:1;
 
   flex-basis:55%;
-  padding:20px 20px 40px;
-  box-shadow: #010b1da9 5px 5px 20px 5px;
+  padding:20px 20px ;
+  box-shadow: #010b1d5f 5px 5px 20px 5px;
   
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly;m */
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 
 
 
@@ -905,7 +905,7 @@ header {
   /* color: #000000d7; */
 }
 .clink > p{
-  margin-bottom:20px;
+  /* margin-bottom:10px; */
 
   max-width: 700px;
 
@@ -964,7 +964,7 @@ header {
 
 
 .form {
-  box-shadow: #010b1da9 5px 5px 20px 5px;
+  box-shadow: #010b1d48 5px 5px 20px 5px;
   
   flex-grow:1;
   flex-basis: 30%;
@@ -975,7 +975,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding:40px 10px;
+  padding:20px 10px;
 
   gap: 25px;
 
